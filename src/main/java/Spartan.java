@@ -18,4 +18,22 @@ public class Spartan extends Human{
     public void setExtraTolerance(Integer extraTolerance) {
         this.extraTolerance = extraTolerance;
     }
+
+    @Override
+    public String toString() {
+        return "Spartan{" +
+                " Nombre = " + super.getName() +
+                " Edad = " + super.getAge() +
+                " Peso = " + super.getWeight() +
+                " ToleranciaExtra = " + extraTolerance +
+                '}';
+    }
+
+    public void executeDrink(){
+        super.getDrink().drink(getExtraTolerance());
+    }
+
+    public void executreUrinate(){
+        super.getUrinate().urinate(getExtraTolerance());
+    }
 }

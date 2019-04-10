@@ -1,7 +1,7 @@
 public class DrinkVikingImp implements Drink {
 
     @Override
-    public void drink() {
-
+    public int drink(int a) {
+        return a - 7;
     }
 }

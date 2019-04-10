@@ -1,19 +1,36 @@
-import java.util.Arrays;
-
-
+import java.util.stream.Collectors;
+import java.util.*;
+import java.util.List;
+import java.util.Comparator;
 
 public class Utils {
 
 
-    /*public static List<Spartan> sortSpartans(List<Spartan> Spartans){
-        return Spartans.stream()
-                .sorted(Comparator.comparing(spartan-> spartan.))
-                .collect(Collectors.toList());
+    /*public static Human sortGetRandom(List<Human> Humans){
+        Random rand = new Random();
+
+        return Humans.stream()
+                .sorted(Comparator.comparing(human -> human.getAge()))
+                .get(rand.nextInt(Humans.size()));
+    }*/
+
+    public static void Play(Human player1, Human player2){
+
+        System.out.println("-----------------EMPIEZA EL JUEGO----------------");
+        System.out.println("-----JUGADOR 1-----");
+        System.out.println(player1);
+        System.out.println("-----JUGADOR 2-----");
+        System.out.println(player2);
+
+
+
+
+
+
+
+
+
+
     }
 
-     public static List<Spartan> sortVikings (List<Viking> Vikings){
-        return Vikings.stream()
-                .sorted(Comparator.comparing(viking-> viking.getName()))
-                .collect(Collectors.toList());
-    }*/
 }

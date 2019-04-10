@@ -1,7 +1,8 @@
 public class DrinkSpartanImp implements Drink {
 
     @Override
-    public void drink() {
+    public int drink(int a) {
 
+        return a - 2 ;
     }
 }

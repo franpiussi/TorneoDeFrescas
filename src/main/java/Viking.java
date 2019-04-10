@@ -18,4 +18,24 @@ public class Viking extends Human {
     public void setProfessionalDrinker(Integer professionalDrinker) {
         ProfessionalDrinker = professionalDrinker;
     }
+
+    @Override
+    public String toString() {
+        return "Viking{" +
+                " Nombre = " + super.getName() +
+                " Edad = " + super.getAge() +
+                " Peso = " + super.getWeight() +
+                " BebedorProfesional = " + ProfessionalDrinker +
+                '}';
+    }
+
+
+    public void executeDrink(){
+        super.getDrink().drink(getProfessionalDrinker());
+    }
+
+    public void executreUrinate(){
+        super.getUrinate().urinate(getProfessionalDrinker());
+    }
+
 }

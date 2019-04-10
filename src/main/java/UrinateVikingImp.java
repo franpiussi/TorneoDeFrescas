@@ -1,6 +1,6 @@
 public class UrinateVikingImp implements Urinate{
     @Override
-    public void urinate() {
-
+    public int urinate(int a) {
+        return a + 7;
     }
 }

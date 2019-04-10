@@ -1,4 +1,4 @@
 public interface Urinate {
 
-    public void urinate();
+    public int urinate(int a);
 }

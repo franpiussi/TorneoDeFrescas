@@ -1,6 +1,6 @@
 public class UrinateSpartanImp implements Urinate{
     @Override
-    public void urinate() {
-
+    public int urinate(int a) {
+        return a + 10;
     }
 }
