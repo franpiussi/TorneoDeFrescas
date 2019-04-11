@@ -30,10 +30,10 @@ public class Spartan extends Human{
     }
 
     public void executeDrink(){
-        super.getDrink().drink(getExtraTolerance());
+        super.getDrink().drink();
     }
 
     public void executreUrinate(){
-        super.getUrinate().urinate(getExtraTolerance());
+        super.getUrinate().urinate();
     }
 }

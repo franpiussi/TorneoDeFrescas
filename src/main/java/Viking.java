@@ -31,11 +31,11 @@ public class Viking extends Human {
 
 
     public void executeDrink(){
-        super.getDrink().drink(getProfessionalDrinker());
+        super.getDrink().drink();
     }
 
     public void executreUrinate(){
-        super.getUrinate().urinate(getProfessionalDrinker());
+        super.getUrinate().urinate();
     }
 
 }
