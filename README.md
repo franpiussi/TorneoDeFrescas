@@ -5,4 +5,4 @@
 
 * POM significa Project Object Model  y es un archivo xml que contiene informacion sobre el proyecto con sus detalles de configuracion(dependencias,fuentes,test,plugins,entre otros) para construir dicho proyecto.
 
-* Archetype es un template o arquetipo, y ArtifactId es el nombre del proyecto.
+* Archetype es un template o arquetipo que se puede elegir antes de empezar un proyecto, y ArtifactId es el nombre del proyecto.
