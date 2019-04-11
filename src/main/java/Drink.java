@@ -1,4 +1,4 @@
 public interface Drink {
 
-    public int drink(int a);
+    public void drink();
 }

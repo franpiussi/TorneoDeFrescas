@@ -18,7 +18,6 @@ public class Main {
 
         Spartan sp = Utils.sortGetRandom(Spartans);*/
 
-        Utils.Play(Spartans.get(0), Vikings.get(0));
 
 
 
