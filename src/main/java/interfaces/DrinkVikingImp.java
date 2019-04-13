@@ -1,6 +1,4 @@
-package Interfaces;
-
-import Interfaces.Drink;
+package interfaces;
 
 import java.util.Random;
 

@@ -1,7 +1,7 @@
-package Models;
+package models;
 
-import Interfaces.Drink;
-import Interfaces.Urinate;
+import interfaces.Drink;
+import interfaces.Urinate;
 
 public class Spartan extends Human{
 

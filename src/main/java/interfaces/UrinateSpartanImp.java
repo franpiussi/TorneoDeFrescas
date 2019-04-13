@@ -1,6 +1,4 @@
-package Interfaces;
-
-import Interfaces.Urinate;
+package interfaces;
 
 import java.util.Random;
 

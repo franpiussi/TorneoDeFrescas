@@ -1,6 +1,6 @@
-import Db.Connect;
-import Interfaces.*;
-import Models.*;
+import db.Connect;
+import interfaces.*;
+import models.*;
 import java.util.*;
 
 public class Main {

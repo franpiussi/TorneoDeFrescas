@@ -1,5 +1,5 @@
-package Db;
-import Models.Human;
+package db;
+import models.Human;
 
 import java.sql.*;
 

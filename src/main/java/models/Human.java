@@ -1,6 +1,6 @@
-package Models;
-import Interfaces.Drink;
-import Interfaces.Urinate;
+package models;
+import interfaces.Drink;
+import interfaces.Urinate;
 
 public class Human {
 
