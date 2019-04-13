@@ -1,9 +1,8 @@
+import Models.*;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Comparator;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class Utils {
 
@@ -19,7 +18,7 @@ public class Utils {
 
 
 
-    public static Human Play(Human player1, Human player2){
+    public static Human play(Human player1, Human player2){
 
         System.out.println("-----------------EMPIEZA EL JUEGO----------------");
         /*System.out.println("-----JUGADOR 1-----");

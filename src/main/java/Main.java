@@ -1,3 +1,6 @@
+import Db.Connect;
+import Interfaces.*;
+import Models.*;
 import java.util.*;
 
 public class Main {
@@ -18,7 +21,15 @@ public class Main {
         Spartan sp = (Spartan) Utils.sortGetRandom(spartans);
         Viking vk = (Viking) Utils.sortGetRandom(vikings);
 
-        Connect.winnerBD(Utils.Play(sp,vk));
+        Human winner = Utils.play(sp,vk);
+        if (Objects.isNull(winner)){
+            System.out.println("Juegue de nuevo !");
+        }
+        else{
+            Connect.winnerBD(winner);
+
+        }
+
 
     }
 }

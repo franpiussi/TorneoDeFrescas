@@ -1,3 +1,5 @@
+package Db;
+import Models.Human;
 
 import java.sql.*;
 
