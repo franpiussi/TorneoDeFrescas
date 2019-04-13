@@ -29,11 +29,11 @@ public class Spartan extends Human{
                 '}';
     }
 
-    public void executeDrink(){
-        super.getDrink().drink();
+    public int executeDrink(){
+        return getDrink().drink() + getExtraTolerance();
     }
 
-    public void executreUrinate(){
-        super.getUrinate().urinate();
+    public int executeUrinate(){
+        return getUrinate().urinate() + getExtraTolerance();
     }
 }

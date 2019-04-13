@@ -5,6 +5,7 @@ public class Human {
     private Integer weight;
     private Urinate urinate;
     private Drink drink;
+    private Integer life;
 
     public Human(){
 
@@ -16,6 +17,7 @@ public class Human {
         this.weight = weight;
         this.urinate = urinate;
         this.drink = drink;
+        this.life = 100;
     }
 
 
@@ -57,5 +59,21 @@ public class Human {
 
     public void setDrink(Drink drink) {
         this.drink = drink;
+    }
+
+    public Integer getLife() {
+        return life;
+    }
+
+    public void setLife(Integer life) {
+        this.life = life;
+    }
+
+    public int Drink(){
+        return getDrink().drink();
+    }
+
+    public int Urinate(){
+        return getUrinate().urinate();
     }
 }

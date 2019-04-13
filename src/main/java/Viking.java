@@ -29,13 +29,12 @@ public class Viking extends Human {
                 '}';
     }
 
-
-    public void executeDrink(){
-        super.getDrink().drink();
+   public int executeDrink(){
+        return getDrink().drink() + getProfessionalDrinker();
     }
 
-    public void executreUrinate(){
-        super.getUrinate().urinate();
+    public int executreUrinate(){
+        return getUrinate().urinate() + getProfessionalDrinker();
     }
 
 }
