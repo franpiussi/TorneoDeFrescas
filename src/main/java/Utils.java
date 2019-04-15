@@ -21,10 +21,6 @@ public class Utils {
     public static Human play(Human player1, Human player2){
 
         System.out.println("-----------------EMPIEZA EL JUEGO----------------");
-        /*System.out.println("-----JUGADOR 1-----");
-        System.out.println(player1);
-        System.out.println("-----JUGADOR 2-----");
-        System.out.println(player2);*/
         System.out.println(player1 + "   ------VS------   " + player2);
 
 
@@ -33,15 +29,23 @@ public class Utils {
             int life1 = player1.getLife();
             int life2 = player2.getLife();
 
+            if( player1 instanceof Spartan){
+                ((Spartan)player1).executeDrink();
+                ((Spartan)player1).executeUrinate();
+            }
+            else{
+                ((Viking)player1).executeDrink();
+                ((Viking)player1).executeUrinate();
+            }
 
-            life1 =  life1 - ((Spartan)player1).executeDrink();
-            life1 = life1 - ((Spartan)player1).executeUrinate();
-
-            life2 = life2 - ((Viking)player2).executeDrink();
-            life2 = life2 - ((Viking)player2).executreUrinate();
-
-            player1.setLife(life1);
-            player2.setLife(life2);
+            if(player2 instanceof Viking){
+                ((Viking)player2).executeDrink();
+                ((Viking)player2).executeUrinate();
+            }
+            else{
+                ((Spartan)player2).executeDrink();
+                ((Spartan)player2).executeUrinate();
+            }
 
             if(player1.getLife() <= 0 && player2.getLife() > 0){
                 System.out.println("Ganador: " + player2);

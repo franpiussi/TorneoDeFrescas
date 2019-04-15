@@ -34,11 +34,13 @@ public class Spartan extends Human{
                 '}';
     }
 
-    public int executeDrink(){
-        return getDrink().drink() + getExtraTolerance();
+    public void executeDrink(){
+        int l = getLife() - getDrink().drink() + getExtraTolerance();
+        setLife(l);
     }
 
-    public int executeUrinate(){
-        return getUrinate().urinate() + getExtraTolerance();
+    public void executeUrinate(){
+        int l = getLife() - getUrinate().urinate() + getExtraTolerance();
+        setLife(l);
     }
 }

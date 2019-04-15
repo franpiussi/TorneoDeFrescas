@@ -34,12 +34,14 @@ public class Viking extends Human {
                 '}';
     }
 
-   public int executeDrink(){
-        return getDrink().drink() + getProfessionalDrinker();
+   public void executeDrink(){
+       int l = getLife() - getDrink().drink() + getProfessionalDrinker();
+       setLife(l);
     }
 
-    public int executreUrinate(){
-        return getUrinate().urinate() + getProfessionalDrinker();
+    public void executeUrinate(){
+        int l =  getLife() - getUrinate().urinate() + getProfessionalDrinker();
+        setLife(l);
     }
 
 }
