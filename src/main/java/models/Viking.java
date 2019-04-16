@@ -4,24 +4,24 @@ import interfaces.Drink;
 import interfaces.Urinate;
 
 public class Viking extends Human {
-    private Integer ProfessionalDrinker;
+    private Integer professionalDrinker;
 
     public Viking(Integer professionalDrinker) {
         super();
-        ProfessionalDrinker = professionalDrinker;
+        this.professionalDrinker = professionalDrinker;
     }
 
     public Viking(String name, Integer age, Integer weight, Urinate urinate, Drink drink, Integer professionalDrinker) {
         super(name, age, weight, urinate, drink);
-        ProfessionalDrinker = professionalDrinker;
+        this.professionalDrinker = professionalDrinker;
     }
 
     public Integer getProfessionalDrinker() {
-        return ProfessionalDrinker;
+        return professionalDrinker;
     }
 
     public void setProfessionalDrinker(Integer professionalDrinker) {
-        ProfessionalDrinker = professionalDrinker;
+        this.professionalDrinker = professionalDrinker;
     }
 
     @Override
@@ -30,11 +30,23 @@ public class Viking extends Human {
                 " Nombre = " + super.getName() +
                 " Edad = " + super.getAge() +
                 " Peso = " + super.getWeight() +
-                " BebedorProfesional = " + ProfessionalDrinker +
+                " BebedorProfesional = " + this.professionalDrinker +
                 '}';
     }
 
-   public void executeDrink(){
+    @Override
+    public void Drink() {
+        int l = getLife() - getDrink().drink() + this.professionalDrinker;
+        setLife(l);
+    }
+
+    @Override
+    public void Urinate() {
+        int l =  getLife() - getUrinate().urinate() + professionalDrinker;
+        setLife(l);
+    }
+
+  /* public void executeDrink(){
        int l = getLife() - getDrink().drink() + getProfessionalDrinker();
        setLife(l);
     }
@@ -42,6 +54,6 @@ public class Viking extends Human {
     public void executeUrinate(){
         int l =  getLife() - getUrinate().urinate() + getProfessionalDrinker();
         setLife(l);
-    }
+    }*/
 
 }

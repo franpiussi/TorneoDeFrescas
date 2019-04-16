@@ -23,29 +23,13 @@ public class Utils {
         System.out.println("-----------------EMPIEZA EL JUEGO----------------");
         System.out.println(player1 + "   ------VS------   " + player2);
 
-
         while (player1.getLife() > 0 && player2.getLife() > 0)
         {
-            int life1 = player1.getLife();
-            int life2 = player2.getLife();
 
-            if( player1 instanceof Spartan){
-                ((Spartan)player1).executeDrink();
-                ((Spartan)player1).executeUrinate();
-            }
-            else{
-                ((Viking)player1).executeDrink();
-                ((Viking)player1).executeUrinate();
-            }
-
-            if(player2 instanceof Viking){
-                ((Viking)player2).executeDrink();
-                ((Viking)player2).executeUrinate();
-            }
-            else{
-                ((Spartan)player2).executeDrink();
-                ((Spartan)player2).executeUrinate();
-            }
+            player1.Drink();
+            player2.Drink();
+            player1.Urinate();
+            player2.Urinate();
 
             if(player1.getLife() <= 0 && player2.getLife() > 0){
                 System.out.println("Ganador: " + player2);

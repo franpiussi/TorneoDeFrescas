@@ -2,7 +2,7 @@ package models;
 import interfaces.Drink;
 import interfaces.Urinate;
 
-public class Human {
+public abstract class Human {
 
     private String name;
     private Integer age;
@@ -73,11 +73,14 @@ public class Human {
         this.life = life;
     }
 
-    public int Drink(){
+    /*public int Drink(){
         return getDrink().drink();
     }
 
     public int Urinate(){
         return getUrinate().urinate();
-    }
+    }*/
+
+    public abstract void Drink();
+    public abstract void Urinate();
 }

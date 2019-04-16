@@ -30,11 +30,23 @@ public class Spartan extends Human{
                 " Nombre = " + super.getName() +
                 " Edad = " + super.getAge() +
                 " Peso = " + super.getWeight() +
-                " ToleranciaExtra = " + extraTolerance +
+                " ToleranciaExtra = " + this.extraTolerance +
                 '}';
     }
 
-    public void executeDrink(){
+    @Override
+    public void Drink() {
+        int l = getLife() - getDrink().drink() + this.extraTolerance;
+        setLife(l);
+    }
+
+    @Override
+    public void Urinate() {
+        int l = getLife() - getUrinate().urinate() +  this.extraTolerance;
+        setLife(l);
+    }
+
+   /* public void executeDrink(){
         int l = getLife() - getDrink().drink() + getExtraTolerance();
         setLife(l);
     }
@@ -42,5 +54,5 @@ public class Spartan extends Human{
     public void executeUrinate(){
         int l = getLife() - getUrinate().urinate() + getExtraTolerance();
         setLife(l);
-    }
+    }*/
 }
