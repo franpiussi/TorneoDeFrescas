@@ -73,6 +73,10 @@ public abstract class Human {
         this.life = life;
     }
 
+    public void resetLife(){
+        this.life = 100;
+    }
+
     /*public int Drink(){
         return getDrink().drink();
     }

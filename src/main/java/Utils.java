@@ -33,10 +33,12 @@ public class Utils {
 
             if(player1.getLife() <= 0 && player2.getLife() > 0){
                 System.out.println("Ganador: " + player2);
+                player2.resetLife();
                 return player2;
             }
             else if (player2.getLife() <= 0 && player1.getLife() > 0){
                 System.out.println("Ganador: " + player1);
+                player1.resetLife();
                 return player1;
             }
             else if(player1.getLife() <= 0 && player2.getLife() <= 0){

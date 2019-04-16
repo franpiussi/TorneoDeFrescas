@@ -46,4 +46,15 @@ public class FinalBoss extends Human {
         int l = getLife() - getUrinate().urinate() +  this.extraTolerance + this.professionalDrinker;
         setLife(l);
     }
+
+    @Override
+    public String toString() {
+        return "FinalBoss{" +
+                " Nombre = " + super.getName() +
+                " Edad = " + super.getAge() +
+                " Peso = " + super.getWeight() +
+                "extraTolerance=" + extraTolerance +
+                ", professionalDrinker=" + professionalDrinker +
+                '}';
+    }
 }
